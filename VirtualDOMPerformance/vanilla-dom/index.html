@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla DOM</title>
+</head>
+<body>
+  <h1 id="vanilla-title">Vanilla Title</h1>
+  <button onclick="changeTitle()">Change Title (Vanilla JS)</button>
+  <p id="counter">Vanilla DOM updates: 0</p>
+
+  <script>
+    let count = 0;
+    function changeTitle() {
+      count++;
+      document.getElementById("vanilla-title").innerText = "Vanilla Title Updated " + count;
+      document.getElementById("counter").innerText = "Vanilla DOM updates: " + count;
+    }
+  </script>
+</body>
+</html>
